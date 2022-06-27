@@ -36,10 +36,12 @@ process.on("unhandledRejection", (err) => {
   });
 });
 
-//Rutas
+//Importar Rutas
 const product = require("./routes/productRoute");
+const user = require("./routes/userRoute");
 
 app.use("/api", product);
+app.use("/api", user);
 
 //Middleware para Errores
 app.use(errorMiddleware);

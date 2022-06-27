@@ -10,6 +10,8 @@ const productSchema = new mongoose.Schema({
     type: String,
     required: [true, "Por Favor Ingrese la Descripción"],
   },
+
+  // TODO: FALTA ASIGNAR UNIQUE:TRUE AL CAMPO SLUG
   slug: {
     type: String,
     required: [true, "Por Favor Ingrese el slug"],
